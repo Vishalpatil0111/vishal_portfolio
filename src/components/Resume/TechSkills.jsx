@@ -2,10 +2,10 @@ import TargetCursor from "../TargetCursor";
 
 export default function TechnicalSkills() {
   const skills = {
-    Languages: ["Python", "JavaScript", "TypeScript"],
-    "Frontend & Backend": ["React", "Next.js", "Node.js", "Express", "MongoDB"],
-    Tools: ["Git", "GitHub", "Postman", "VS Code", "Figma"],
-    "AI / ML": ["TensorFlow", "Scikit-Learn", "Pandas", "NumPy", "OpenAI API"],
+    Languages: ["Python", "JavaScript"],
+    "Frontend & Backend": ["React", "Node.js", "FastAPI", "MongoDB", "MYSQL"],
+    Tools: ["Git", "GitHub", "Postman", "VS Code", "Figma", "Vercel"],
+    "AI / ML": ["TensorFlow", "Scikit-Learn", "Pandas", "NumPy", "OpenAI"],
   };
 
     return (
