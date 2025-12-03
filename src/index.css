@@ -5,9 +5,13 @@
 html,body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
+
 
 .main-font {
   font-family: "Manrope", sans-serif;

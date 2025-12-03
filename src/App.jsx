@@ -9,7 +9,7 @@ import Resume from './pages/Resume';
 
 export default function App() {
   return (
-    <div className="main-font bg-zinc-900">
+    <div className="main-font  bg-zinc-900">
      
         <Navbar />
         <Routes>

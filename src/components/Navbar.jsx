@@ -9,7 +9,6 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  // Detect if #projects is active
   const isProjectsActive = location.hash === "#projects";
 
   const menuVariants = {
@@ -26,13 +25,13 @@ function Navbar() {
 
   return (
     <>
-      {/* Navbar Wrapper */}
-      <div className="w-full  top-0 z-50 px-4 flex justify-center h-20 bg-transparent">
+      {/* Sticky Navbar Wrapper */}
+      <div className="w-full sticky top-0 z-50 px-4 py-2 bg-transparent backdrop-blur-md">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-6xl bg-zinc-800 rounded-full mt-4 px-5 py-3 text-white flex items-center justify-between"
+          className="w-full max-w-6xl mx-auto bg-zinc-800 rounded-full px-5 py-3 text-white flex items-center justify-between relative"
         >
           {/* Brand */}
           <motion.div
@@ -40,9 +39,7 @@ function Navbar() {
             initial="hidden"
             animate="visible"
             variants={{
-              visible: {
-                transition: { staggerChildren: 0.05 },
-              },
+              visible: { transition: { staggerChildren: 0.05 } },
             }}
           >
             {"Vishal".split("").map((char, i) => (
@@ -50,11 +47,7 @@ function Navbar() {
                 key={i}
                 variants={{
                   hidden: { opacity: 0, y: -10 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 0.3 },
-                  },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
                 }}
                 className="text-xl font-bold"
               >
@@ -110,7 +103,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden fixed right-8 gap-1 items-center text-white text-2xl"
+            className="md:hidden absolute right-6 text-white text-2xl"
             onClick={() => setOpen(true)}
           >
             <FiMenu />
@@ -126,7 +119,7 @@ function Navbar() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed top-0 right-0 w-72 h-full bg-zinc-900 text-white p-6 z-50 flex flex-col justify-between"
+            className="fixed top-0 right-0 w-72 h-full bg-zinc-900 text-white p-6 z-999 flex flex-col justify-between"
           >
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
