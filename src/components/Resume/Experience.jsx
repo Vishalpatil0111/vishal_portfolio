@@ -50,6 +50,7 @@ export default function ExperienceSection() {
               text-base md:text-lg 
               hover:scale-[1.03] 
               transition 
+              cursor-target
               flex items-center justify-center md:justify-start
             "
           >
