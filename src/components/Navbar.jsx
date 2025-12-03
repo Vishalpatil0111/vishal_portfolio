@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar Wrapper */}
-      <div className="w-full sticky top-0 z-50 px-4 flex justify-center h-20 bg-transparent">
+      <div className="w-full  top-0 z-50 px-4 flex justify-center h-20 bg-transparent">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

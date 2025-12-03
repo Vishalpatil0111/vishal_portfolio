@@ -10,11 +10,11 @@ function Hero() {
 
   const navigate = useNavigate();
   return (
-    <div className="w-full min-h-screen p-4 flex flex-col justify-top items-center gap-5">
-      <div className="text-center font-normal text-[45px] md:text-[50px] lg:text-[72px] leading-tight flex flex-col justify-center items-center h-full text-white px-4">
+    <div className="w-full  min-h-screen p-4 flex flex-col justify-top items-center gap-5">
+      <div className="text-center font-normal text-[32px] md:text-[50px] lg:text-[72px] leading-tight flex flex-col justify-center items-center h-full text-white px-4">
         {/* Line 1 */}
         <motion.h1
-          className="flex gap-2 md:gap-4 lg:gap-5"
+          className="flex flex-wrap gap-2 md:gap-4 lg:gap-5 justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -28,7 +28,7 @@ function Hero() {
           </motion.span>
 
           <motion.span
-            className="px-5 py-2 bg-sky-400 text-black text-[30px] lg:text-[55px] rounded-full font-semibold inline-block"
+            className="px-4 py-1 md:px-5 md:py-2 bg-sky-400 text-black text-[22px] md:text-[36px] lg:text-[55px] rounded-full font-semibold inline-block"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -54,19 +54,15 @@ function Hero() {
             visible: {
               opacity: 1,
               y: 0,
-              transition: {
-                duration: 0.8,
-                delay: 0.55,
-                ease: "easeOut",
-              },
+              transition: { duration: 0.8, delay: 0.55, ease: "easeOut" },
             },
           }}
-          className="flex gap-3"
+          className="flex flex-wrap gap-2 justify-center"
         >
           <span>Digital</span>
 
           <motion.span
-            className="px-5 py-2 text-yellow-300 rounded-full inline-block"
+            className="px-1 py-1 md:px-5 md:py-2 text-yellow-300 text-[26px] md:text-[36px] lg:text-[55px] rounded-full inline-block"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
@@ -135,7 +131,7 @@ function Hero() {
           </motion.button>
         </motion.div>
       </div>
-      <div className="w-1/3 self-center md:self-end h-full ">
+      <div className="w-1/3 self-center flex items-center justify-center md:self-end h-full ">
         <CircularText
           text="VISHAL*DEV*FREELANCER*"
           onHover="speedUp"
