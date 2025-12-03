@@ -11,16 +11,16 @@ export default function EducationCard() {
           {/* RIGHT CONTENT */}
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl md:text-3xl font-semibold text-white leading-tight">
-              Bachelor’s of Design, Fashion Communication
+              Bachelor’s of Computer Engineering
             </h2>
 
             <p className="text-gray-300 text-base font-medium">
-              National Institute of Fashion Technology, Bhubaneswar (Odisha)
+              GES R.H.Sapat College of engineering
             </p>
 
             {/* Batch tag */}
             <span className="bg-[#F7A8D8] text-black px-6 py-2 mt-3 rounded-full text-sm font-semibold w-max">
-              BATCH 2017 - 2021
+              BATCH 2021 - 2024
             </span>
           </div>
         </div>
