@@ -1,7 +1,7 @@
 export default function ExperienceSection() {
   const openResume = () => {
     // Opens in new tab
-    window.open("/Vishal-Resume.pdf", "_blank");
+    window.open("/Vishal_Patil_CV.pdf", "_blank");
   };
 
   return (
