@@ -2,23 +2,29 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Lead UI/UX Designer",
-    company: "Because",
-    date: "Jan 2024 - March 2025",
+    role: "Trainee Software Engineer",
+    company: "The Shine Media",
+    date: "Sep 2024 - Present",
     points: [
-      "Led a team of designers and developers, driving strategy, execution, and delivery of user-centric digital solutions.",
-      "Managed multiple projects end-to-end, ensuring design quality and timely delivery.",
-      "Clients: Venus Games, Crescenzia Wellness, GGIS School, Wise Wings, Nagar Chasmaghar, Unispace",
+      "Developed and maintained responsive websites using React.js, HTML5, CSS3, Tailwind, and JavaScript, improving UI consistency and reducing layout issues by 30%.",
+
+      "Collaborated with senior developers to build reusable UI components, resulting in a 20% faster development cycle for new features.",
+
+      "Optimized website performance by implementing lazy loading, image optimization, and API response caching, improving page load speed by up to 40%.",
+
+      "Implemented REST APIs integration using Axios/Fetch, validating data flows and improving application reliability.",
+
+      "Built interactive UI elements using React hooks, context APIs, and custom utility components, leading to smoother user experience.",
     ],
   },
   {
-    role: "Product Designer",
-    company: "Dayone Tech",
-    date: "Sep 2022 - Dec 2023",
+    role: "Intern",
+    company: "Zabuza Labs",
+    date: "Sep 2023 - Feb 2024",
     points: [
-      "Designed mobile & web applications with strong focus on UX workflows and visual identity.",
-      "Collaborated with engineering teams to deliver scalable design systems.",
-      "Improved feature usability by 40% through user testing and prototyping.",
+      "Developed and deployed Python-based APIs using FastAPI, integrating Generative AI capabilities such as text-to-image generation and text summarization, enabling advanced user-facing features.",
+      "Enhanced backend performance by optimizing response times and implementing asynchronous processing, improving overall system scalability and reducing latency.",
+
     ],
   },
 ];
