@@ -4,19 +4,20 @@ import Navbar from './components/Navbar'
 import ContactSection from './assets/Footer'
 import { Route, Router, Routes } from 'react-router-dom';
 import Resume from './pages/Resume';
+import Test from './Test';
 
 
 
 export default function App() {
   return (
-    <div className="main-font  bg-zinc-900">
-     
-        <Navbar />
+    <div className="main-font  ">
+    <Test/>
+        {/* <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume/>} />
         </Routes>
-        <ContactSection/>
+        <ContactSection/> */}
     
     </div>
   );
