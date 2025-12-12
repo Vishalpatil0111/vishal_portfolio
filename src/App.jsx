@@ -4,13 +4,12 @@ import Navbar from './components/Navbar'
 import ContactSection from './assets/Footer'
 import { Route, Router, Routes } from 'react-router-dom';
 import Resume from './pages/Resume';
-import Test from './Test';
 
 
 
 export default function App() {
   return (
-    <div className="main-font  ">
+    <div className="main-font bg-black text-white ">
    
         <Navbar />
         <Routes>
