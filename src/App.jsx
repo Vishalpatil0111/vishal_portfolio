@@ -11,13 +11,13 @@ import Test from './Test';
 export default function App() {
   return (
     <div className="main-font  ">
-    <Test/>
-        {/* <Navbar />
+   
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume/>} />
         </Routes>
-        <ContactSection/> */}
+        <ContactSection/>
     
     </div>
   );
